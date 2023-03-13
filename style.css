@@ -1,0 +1,300 @@
+@font-face {
+    font-family: Regular;
+    src: url("./fonts/RedHatDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: Medium;
+    src: url("./fonts/RedHatDisplay-Medium.ttf");
+}
+
+@font-face {
+    font-family: Bold;
+    src: url("./fonts/RedHatDisplay-Bold.ttf");
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0ch;
+    outline: none;
+    list-style: none;
+    font-family: Regular;
+}
+
+html,body,.root{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width: 999px) {
+    body{
+        background-color: hsl(225, 100%, 94%);
+        background-image: url("./images/pattern-background-desktop.svg");
+        background-size: cover;
+    }
+
+    .root{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        position: absolute;
+        top: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5vh;
+        border-radius: 10px;
+        background-color: white;
+        height: min-content;
+        max-height: 90vh;
+        width: min-content;
+        padding-bottom: 6vh;
+    }
+
+    .top{
+        width: min-content;
+    }
+
+    .top img{
+        width: min-content;
+        max-height: 220px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .middle,.bottom{
+        width: 70%;
+    }
+
+    .middle{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 1vh;
+    }
+
+    .middle h1{
+        color: hsl(223, 47%, 23%);
+        font-family: Bold;
+    }
+
+    .middle p{
+        font-family: Regular;
+        color: hsl(224, 23%, 55%);
+    }
+
+    .plan{
+        width: 90%;
+        padding: 5% 5% 5% 5%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        background-color: hsl(225, 100%, 98%);
+        
+    }
+
+    .left{
+        display: flex;
+        gap: 10px;
+    }
+
+    .left-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .right-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .left h1{
+        font-size: 1em;
+    }
+
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottom{
+        margin-top: 2vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+        
+    }
+
+    .bottom button{
+        box-shadow: hsl(245, 75%, 52%) 0px 10px 12px;
+        background-color: hsl(245, 75%, 52%);
+        width: 100%;
+        border-radius: 10px;
+        height: 60px;
+        color: white;
+        font-size: 1em;
+    }
+    
+    .bottom button span{
+        font-family: Bold;
+    }
+
+    .bottom a{
+        font-family: Bold;
+        font-size: 1em;
+        text-decoration: none;
+        color: hsl(224, 23%, 55%);
+    }
+
+    .bottom button:hover{
+        transition: 1s;
+        opacity: 0.7;
+    }
+
+
+}
+
+@media screen and (max-width:998px) {
+    body{
+        background-color: hsl(225, 100%, 94%);
+        background-image: url("./images/pattern-background-desktop.svg");
+        background-size: cover;
+    }
+
+    .root{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .top{
+        width: 100%;
+    }
+
+    .top img{
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card{
+        max-width: 90vw;
+        border-radius: 10px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        height: min-content;
+        padding-bottom: 6vh;
+        align-items: center;
+    }
+
+    .middle,.bottom{
+        background-color: transparent;
+        width: 75%;
+    }
+
+    .middle{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 1vh;
+    }
+
+    .middle h1{
+        color: hsl(223, 47%, 23%);
+        font-family: Bold;
+    }
+
+    .middle p{
+        font-family: Regular;
+        color: hsl(224, 23%, 55%);
+    }
+
+    .plan{
+        width: 90%;
+        padding: 5% 5% 5% 5%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        background-color: hsl(225, 100%, 98%);
+        
+    }
+
+    .left{
+        display: flex;
+        gap: 10px;
+    }
+
+    .left-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .right-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .left h1{
+        font-size: 1em;
+    }
+
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottom{
+        margin-top: 2vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 6vh;
+        align-items: center;
+    }
+
+    .bottom button{
+        box-shadow: hsl(245, 75%, 52%) 0px 10px 12px;
+        background-color: hsl(245, 75%, 52%);
+        width: 100%;
+        border-radius: 10px;
+        height: 60px;
+        color: white;
+        font-size: 1em;
+    }
+    
+    .bottom button span{
+        font-family: Bold;
+    }
+
+    .bottom a{
+        font-family: Bold;
+        font-size: 1em;
+        text-decoration: none;
+        color: hsl(224, 23%, 55%);
+    }
+
+    .bottom button:hover{
+        transition: 1s;
+        opacity: 0.7;
+    }
+    
+}

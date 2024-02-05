@@ -28,7 +28,7 @@ html,body,.root{
     width: 100%;
 }
 
-@media screen and (min-width: 999px) {
+@media screen and (min-width: 500px) {
     body{
         background-color: hsl(225, 100%, 94%);
         background-image: url("./images/pattern-background-desktop.svg");
@@ -46,7 +46,7 @@ html,body,.root{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 5vh;
+        gap: 3vh;
         border-radius: 10px;
         background-color: white;
         height: min-content;
@@ -74,7 +74,7 @@ html,body,.root{
         flex-direction: column;
         text-align: center;
         align-items: center;
-        gap: 1vh;
+        gap: 1.5vh;
     }
 
     .middle h1{
@@ -89,7 +89,7 @@ html,body,.root{
 
     .plan{
         width: 90%;
-        padding: 5% 5% 5% 5%;
+        padding: 5% 8% 5% 8%;
         border-radius: 10px;
         display: flex;
         justify-content: space-between;
@@ -131,16 +131,16 @@ html,body,.root{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 3vh;
+        gap: 4vh;
         
     }
 
     .bottom button{
-        box-shadow: hsl(245, 75%, 52%) 0px 10px 12px;
+        box-shadow: hsl(245, 75%, 52%) 0px 2px 4px;
         background-color: hsl(245, 75%, 52%);
         width: 100%;
         border-radius: 10px;
-        height: 60px;
+        height: 50px;
         color: white;
         font-size: 1em;
     }
@@ -164,7 +164,7 @@ html,body,.root{
 
 }
 
-@media screen and (max-width:998px) {
+@media screen and (max-width:499px) {
     body{
         background-color: hsl(225, 100%, 94%);
         background-image: url("./images/pattern-background-desktop.svg");
@@ -193,7 +193,7 @@ html,body,.root{
         background-color: white;
         display: flex;
         flex-direction: column;
-        gap: 5vh;
+        gap: 4vh;
         height: min-content;
         padding-bottom: 6vh;
         align-items: center;
@@ -209,22 +209,24 @@ html,body,.root{
         flex-direction: column;
         text-align: center;
         align-items: center;
-        gap: 1vh;
+        gap: 1.7vh;
     }
 
     .middle h1{
+        font-size: 2em;
         color: hsl(223, 47%, 23%);
         font-family: Bold;
     }
 
     .middle p{
+        font-size: 0.9em;
         font-family: Regular;
         color: hsl(224, 23%, 55%);
     }
 
     .plan{
         width: 90%;
-        padding: 5% 5% 5% 5%;
+        padding: 3% 5% 3% 5%;
         border-radius: 10px;
         display: flex;
         justify-content: space-between;
@@ -251,7 +253,12 @@ html,body,.root{
 
 
     .left h1{
-        font-size: 1em;
+        font-size: 0.9em;
+    }
+
+    .left p{
+        font-size: 0.7em;
+        text-align: left;
     }
 
     .right{
@@ -265,18 +272,18 @@ html,body,.root{
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 6vh;
+        gap: 4vh;
         align-items: center;
     }
 
     .bottom button{
-        box-shadow: hsl(245, 75%, 52%) 0px 10px 12px;
+        box-shadow: hsl(245, 75%, 52%) 0px 2px 4px;
         background-color: hsl(245, 75%, 52%);
         width: 100%;
         border-radius: 10px;
-        height: 60px;
+        height: 45px;
         color: white;
-        font-size: 1em;
+        font-size: 0.9em;
     }
     
     .bottom button span{
@@ -290,9 +297,4 @@ html,body,.root{
         color: hsl(224, 23%, 55%);
     }
 
-    .bottom button:hover{
-        transition: 1s;
-        opacity: 0.7;
-    }
-    
 }
